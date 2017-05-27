@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/TitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/profile"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/profile" />
+
+        <Button
+            android:id="@+id/title"
+            android:layout_width="235dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/box_title" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/search" />
+    </LinearLayout>//title bar
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这是box页面"
+        />
+
+</LinearLayout>

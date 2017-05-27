@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="location">
+        <item>所有餐厅</item>
+        <item>学生餐厅</item>
+        <item>荔园餐厅</item>
+        <item>西餐厅</item>
+        <item>茶餐厅</item>
+    </string-array>
+    <string-array name="meal">
+        <item>全天</item>
+        <item>早餐</item>
+        <item>中餐</item>
+        <item>晚餐</item>
+        <item>宵夜</item>
+    </string-array>
+    <string-array name="day">
+        <item>此星期</item>
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+    <string-array name="popular">
+        <item>受欢迎</item>
+        <item>不喜欢</item>
+    </string-array>
+    <string-array name="department">
+        <item>计算机系</item>
+        <item>致诚书院</item>
+        <item>致仁书院</item>
+        <item>树仁书院</item>
+        <item>树德书院</item>
+        <item>国际合作部</item>
+        <item>后勤</item>
+    </string-array>
+    <string-array name="category">
+        <item>废话</item>
+        <item>学术讲座</item>
+        <item>紧急通知</item>
+        <item>选课</item>
+        <item>书院活动</item>
+    </string-array>
+    <string-array name="time">
+        <item>最近3天</item>
+        <item>今天</item>
+    </string-array>
+</resources>
