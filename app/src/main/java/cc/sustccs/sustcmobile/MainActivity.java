@@ -1,22 +1,20 @@
 package cc.sustccs.sustcmobile;
 
 import android.os.Bundle;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,RadioGroup.OnCheckedChangeListener,
@@ -31,7 +29,8 @@ public class MainActivity extends AppCompatActivity
     private ViewPager vpager;
 
     private MyFragmentPagerAdapter mAdapter;
-	
+//	private FragmentManager fragmentManager;
+
 	//几个代表页面的常量
     public static final int PAGE_ONE = 0;
     public static final int PAGE_TWO = 1;
@@ -45,18 +44,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        CoordinatorLayout rootLayout;
-        rootLayout = (CoordinatorLayout) findViewById(R.id.rootLayout);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -183,6 +170,7 @@ public class MainActivity extends AppCompatActivity
                     break;
                 case PAGE_TWO:
                     box_btn_normal.setChecked(true);
+                    addClass();
                     break;
                 case PAGE_THREE:
                     notification_btn_normal.setChecked(true);
@@ -192,5 +180,30 @@ public class MainActivity extends AppCompatActivity
                     break;
             }
         }
+    }
+
+    public void addClass(){
+        //监听button事件
+//        box_btn_normal.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String text="算法设计基础@W3502";
+//                BoxFragment boxFragment = (BoxFragment)getSupportFragmentManager().findFragmentByTag("android:switcher:" + R.id.vpager + ":1");
+//
+//                Toast tot = Toast.makeText(
+//                        MainActivity.this,
+//                        "刷新课表",
+//                        Toast.LENGTH_LONG);
+//                tot.show();
+//
+//                boxFragment.addView(1,1,2,text);
+//                boxFragment.addView(7,2,3,text);
+//                boxFragment.addView(5,9,10,text);
+//                boxFragment.addView(4,2,3,text);
+//                boxFragment.addView(3,5,5,text);
+//                boxFragment.addView(4,10,12,text);
+//            }
+//        });
+
     }
 }

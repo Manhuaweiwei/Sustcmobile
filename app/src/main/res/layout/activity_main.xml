@@ -46,28 +46,32 @@
                     android:layout_width="88dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/home_btn_restaurant_normal" />
+                    android:button="@null"
+                    android:background="@drawable/rest_bg" />
 
                 <RadioButton
                     android:id="@+id/box_btn_normal"
                     android:layout_width="92dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/home_btn_box_normal" />
+                    android:button="@null"
+                    android:background="@drawable/box_bg" />
 
                 <RadioButton
                     android:id="@+id/notification_btn_normal"
                     android:layout_width="90dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/home_btn_notification_normal" />
+                    android:button="@null"
+                    android:background="@drawable/noti_bg" />
 
                 <RadioButton
                     android:id="@+id/explore_btn_normal"
                     android:layout_width="90dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@drawable/home_btn_explore_normal" />
+                    android:button="@null"
+                    android:background="@drawable/exp_bg" />
             </RadioGroup>
 
             //bottom
